@@ -1,1 +1,50 @@
-/*# sourceMappingURL=sub.css.map */
+main {
+  position: relative;
+  min-height: 100dvh;
+}
+
+section {
+  position: relative;
+  min-height: 100dvh;
+  background-color: blanchedalmond;
+}
+
+#floatHeader {
+  position: fixed;
+  bottom: 20%;
+  right: 5%;
+  transition: 0.3s;
+}
+#floatHeader .list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  gap: 10px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+#floatHeader .list > li {
+  display: block;
+}
+#floatHeader .list > li .menu {
+  display: block;
+  transition: 0.5s;
+  font-size: 1rem;
+  color: #303138;
+  font-weight: 600;
+}
+#floatHeader .list > li .menu .emoji {
+  display: inline-block;
+  padding-left: 5px;
+  transition: 0.5s;
+}
+#floatHeader .list > li .menu:hover {
+  color: rgba(0, 56, 160, 0.8);
+}
+#floatHeader .list > li .menu:hover .emoji {
+  display: inline-block;
+  padding-left: 0;
+}/*# sourceMappingURL=sub.css.map */
