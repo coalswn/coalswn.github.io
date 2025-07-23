@@ -288,7 +288,7 @@ section {
 #main .firstCode {
   display: block;
   text-align: center;
-  font: 700 5rem "GongGothicMedium";
+  font: 700 9rem "GongGothicMedium";
   transition: 0.5s;
   color: #ddd;
 }
