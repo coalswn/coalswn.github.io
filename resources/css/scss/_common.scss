@@ -1,37 +1,67 @@
 main {position:relative; min-height:100dvh;}
-section {position:relative; min-height:100dvh; background-color:blanchedalmond;}
+section {position:relative; min-height:100dvh;}
 
-$main : #000;
-$color : #303138;
+$main : rgb(20, 20, 148);
+$sub : #dd633d;
+$color : #2d3b53;
 
 #floatHeader {
-    position:fixed; bottom:20%; right:5%;
-    transition: .3s;
+    position:fixed; bottom:20%; right:5%; 
+    border-radius: 20px; padding:30px 30px 35px;
+    background-color: rgba(0, 0, 0, 0.1); 
+    backdrop-filter:blur(20px);
+    mix-blend-mode:difference;
+    // animation: bounce 1.5s ease-in-out infinite; 
+    overflow: hidden;
+    transition: .7s; animation: DongDong 3s ease-in-out infinite;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     .list {
         display:flex; flex-direction: column; 
-        align-items: flex-start; padding:20px;
-        background-color: rgba(0, 0, 0, 0.1); 
-        border-radius: 20px; gap:10px;
-        backdrop-filter:blur(20px);
+        align-items: flex-start; gap:15px;
         > li {
             display:block;
             .menu {
                 display:block; transition: .5s;
-                font-size: 1rem; color:$color; 
-                font-weight: 600;
+                font-size: 1.125rem; color:$color; 
+                font-weight:700; 
                 .emoji {
                     display: inline-block; 
-                    padding-left:5px;
+                    padding-left:7px;
                     transition: .5s;
+                    font-size: 1.25rem;
                 }
                 &:hover {
                     color:rgba(0, 56, 160, 0.8); 
                     .emoji {
                         display: inline-block;
-                        padding-left:0;
+                        padding-left:3px;
                     }
                 }
             }
         }
+    }
+}
+
+@keyframes DongDong {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-30%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
     }
 }
