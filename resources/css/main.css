@@ -462,4 +462,14 @@ section {
   transition: 0.5s;
   font: 700 2rem "Paperlogy-8ExtraBold";
   color: rgb(20, 20, 148);
+}
+#main .mainTit.t01 {
+  color: rgb(20, 20, 148);
+}
+#main .mainTit.t02 {
+  color: #fff;
+}
+
+#sec02 {
+  background-color: rgb(33, 33, 97);
 }/*# sourceMappingURL=main.css.map */

@@ -66,5 +66,11 @@
         display: block; transition: .5s;
         font:700 2rem 'Paperlogy-8ExtraBold';
         color: $main;
+        &.t01 {color: $main;}
+        &.t02 {color:#fff;}
     }
+}
+
+#sec02 {
+    background-color:$sub02;
 }
